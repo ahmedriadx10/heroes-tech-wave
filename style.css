@@ -1,0 +1,46 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* shared design*/
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.btn{
+
+  padding: 12px 16px;
+ border: none;
+
+}
+
+.d-flex{
+  display: flex;
+}
+
+.d-column{
+  flex-direction: column;
+}
+
+.c-center{
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+/* individual design */
