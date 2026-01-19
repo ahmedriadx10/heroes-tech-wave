@@ -104,7 +104,7 @@ header{
 .navigation_menu{
   justify-content: space-between;
   align-items: center; 
-  padding: 22px 20px;
+  padding: 18px;
   color: var(--primary-white);
 }
 
@@ -226,7 +226,41 @@ justify-content: center;
   box-shadow: 0 0 18px rgba(0, 255, 136, 1);
 }
 
+.hero_circle{
+  border-radius: 50%;
+animation: blinkLight 12s linear 7s infinite;
 
+}
+
+@keyframes blinkLight {
+
+  0%{
+    box-shadow: 0;
+  }
+
+  20%{
+    box-shadow: 0 0 30px rgba(251, 9, 180, 1);
+  }
+
+  40%{
+    box-shadow: 0 0 30px rgba(145, 0, 248, 1);
+  }
+
+ 
+
+  60%{
+    box-shadow: 0 0 30px rgba(251, 9, 180, 1);
+  }
+
+  80%{
+    box-shadow:0 0 30px rgba(145, 0, 248, 1);
+  }
+  
+100% {
+box-shadow: 0;
+}
+
+}
 
 
 
@@ -645,7 +679,7 @@ max-width: 200px;
    /* about podcast area */
 
    .about_podcast_info{
-    margin: 50px auto;
+    margin: 0 auto 50px;
    }
 
 
