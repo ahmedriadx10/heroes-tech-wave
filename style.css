@@ -63,7 +63,7 @@ font-weight: 600;
 }
 
 .btn:hover{
-/* transform: translateY(-1px); */
+transform: translateY(-1px);
 box-shadow: 0 0 12px rgba(251, 9, 180, 1);
 }
 
@@ -332,7 +332,7 @@ padding: 0 10px;
 
 .about_podcast_info p{
   line-height: 24px;
-  margin: 20px 0;
+  margin: 22px 0;
 }
 
 .podcast_activity_main{
@@ -448,7 +448,7 @@ justify-content: center;
 .episode_main_container{
   margin-top: 40px;
  grid-template-columns: repeat(3,1fr);
- gap: 30px;
+ gap: 40px;
 }
 
 
