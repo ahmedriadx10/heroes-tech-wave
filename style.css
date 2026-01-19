@@ -142,7 +142,7 @@ background: var(--brand-gradient);
   padding: 101px 0;
 background: url(./assets/hero-bg.png);
 background-repeat: no-repeat;
-background-size: cover;
+background-size:100% 100%;
 background-position: center;
 }
 
@@ -369,6 +369,61 @@ justify-content: center;
 }
 
 
+#featured_episode_area{
+  padding: 110px 0;
+}
+
+.feature_episode_title{
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: bold;
+}
+
+
+.episode_main_container{
+  margin-top: 40px;
+ grid-template-columns: repeat(3,1fr);
+ gap: 30px;
+}
+
+
+.episode{
+  border-radius:25px 25px 15px 15px;
+  background-color: #250D44;
+}
+
+.episode iframe{
+  width: 100%;
+border-radius: 20px 20px 0 0;
+  aspect-ratio:16/9;
+}
+
+
+.episode_info{
+  padding: 25px;
+}
+
+.episode_info h6{
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.episode_info p{
+  margin:12px 0 ;
+}
+
+
+.episode_duration{
+  gap:6px ;
+  align-items: center;
+
+}
+
+
+
+.episode_duration p{
+  color: rgba(0, 255, 136, 1);
+}
 
 
 
@@ -505,10 +560,38 @@ gap: 30px;
 
 
 
+/* feature episodes */
+
+
+#featured_episode_area{
+  padding: 50px 0;
+}
+
+.feature_episode_title{
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: bold;
 }
 
 
-/* responsive over 576px device */
+.episode_main_container{
+  padding: 0 10px;
+ grid-template-columns: 1fr;
+ gap: 30px;
+}
+
+.episode_info{
+  padding: 16px;
+}
+
+.episode_info h6{
+  font-size: 2rem;
+}
+
+}
+
+
+/* responsive up to 576px device */
 
 @media screen and (min-width:576px) and (max-width:992px){
 .container{
@@ -632,6 +715,33 @@ gap: 30px;
   grid-column: 1/1;
 }
 
+
+
+/* feature episodes */
+
+#featured_episode_area{
+  padding: 80px 0;
+}
+
+.feature_episode_title{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+
+.episode_main_container{
+  padding: 0 20px;
+ grid-template-columns:1fr;
+}
+
+.episode_info{
+  padding: 20px;
+}
+
+.episode_info h6{
+  font-size: 2.2rem;
+}
 
 
 }
