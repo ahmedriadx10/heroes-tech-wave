@@ -62,6 +62,10 @@ font-weight: 600;
   display: flex;
 }
 
+.d-grid{
+  display: grid;
+}
+
 .d-column{
   flex-direction: column;
 }
@@ -184,7 +188,33 @@ justify-content: center;
   font-weight: 600;
   padding: 8px 16px;
   box-shadow: 0 0 15px rgba(0, 255, 136, 1);
+  animation: popup 10s linear infinite;
 }
+
+@keyframes popup{
+ 0%{
+    background-color: rgba(0, 255, 136, 1);
+      box-shadow: 0 0 15px rgba(0, 255, 136, 1);
+  }
+
+  25%{
+    box-shadow: 0 0 15px rgba(247, 233, 63, 1) ;
+    background-color: rgba(247, 233, 63, 1);
+  }
+
+
+  50%{
+    background-color:rgba(251, 9, 180, 1);
+    box-shadow: 0 0 15px rgba(251, 9, 180, 1);
+  }
+
+75%{
+  background-color: rgba(145, 0, 248, 1);
+  box-shadow: 0 0 15px rgba(145, 0, 248, 1);
+}
+}
+
+
 
 
 .hero_info h2{
@@ -226,6 +256,50 @@ color: var(--primary-white);
   border: 1px solid rgba(0, 255, 136, 1);
   color: rgba(0, 255, 136, 1);
   background: none;
+}
+
+
+/* about podcust section */
+
+
+
+
+
+.about_podcast_info{
+  max-width: 800px;
+margin: 40px auto 80px;
+text-align: center;
+padding: 0 10px;
+}
+
+.about_podcast_info h3{
+ font-size: 4.8rem;
+ font-weight: bold; 
+}
+
+.about_podcast_info p{
+  line-height: 24px;
+  margin: 20px 0;
+}
+
+.podcast_activity_main{
+
+ grid-template-columns: repeat(4,1fr);
+ padding: 80px 0;
+ border-top:2px solid rgb(41, 20, 69) ;
+ justify-content: space-between;
+ justify-items: center;
+}
+
+.tech_wave_activity{
+  text-align: center;
+}
+
+.tech_wave_activity h4{
+  font-size: 4.8rem;
+  color: rgba(0, 255, 136, 1);
+  font-weight: 800;
+  margin-bottom: 16px;
 }
 
 
@@ -288,15 +362,128 @@ max-width: 250px;
    }
 
 
+
+
+   /* about podcast area */
+
+   .about_podcast_info{
+    margin: 50px auto;
+   }
+
+
+.about_podcast_info h3{
+ font-size: 3.2rem;
+}
+
+.about_podcast_info p{
+  line-height: 20px;
+}
+
+.podcast_activity_main{
+
+ grid-template-columns: repeat(2,1fr);
+ padding: 50px 0;
+ row-gap: 40px;
+}
+
+
+
+.tech_wave_activity h4{
+  font-size: 4rem;
+}
+
+
 }
 
 
 /* responsive over 576px device */
 
-/* @media screen and (min-width:576px) and (max-width:992px){
+@media screen and (min-width:576px) and (max-width:992px){
+.container{
+  width: 95%;
+}
+
+.navigation_menu ul{
+    display: none;
+  }
+
+.nav-btn-container{
+  display: none;
+}
+
+.hamb-menu{
+  display: block;
+  font-size: 26px;
+
+}
+
+#banner_area{
+  padding: 50px 25px;
+}
 
 
-} */
+
+
+.hero_circle_img_container{
+max-width: 250px;
+  top: 25px;
+ 
+}  
+
+   .hero_info h2{
+    font-size: 5rem;
+   }
+
+ 
+   .mic_container .mic_large{
+    display: none;
+   }
+
+   .mic_container .mic_mobile{
+    display: inline-block;
+   }
+
+ 
+ 
+
+
+
+
+   /* about podcast area */
+
+   .about_podcast_info{
+    margin: 60px auto;
+   }
+
+
+.about_podcast_info h3{
+ font-size: 4rem;
+}
+
+
+
+.podcast_activity_main{
+
+ grid-template-columns: repeat(3,1fr);
+ padding: 60px 0;
+ row-gap: 40px;
+}
+
+
+
+.tech_wave_activity h4{
+  font-size: 4rem;
+}
+
+
+.tooltip_area{
+    top: 1px;
+  right: 12px;
+   }
+
+
+
+}
 
 
 /* responsive over 992px device */
