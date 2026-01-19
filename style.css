@@ -37,6 +37,7 @@ h1,h2,h3,h4,h5,h6{
 
 p{
  color: #ddd;
+ line-height: 24px;
 }
 
 
@@ -303,6 +304,73 @@ padding: 0 10px;
 }
 
 
+/* why choose area design */
+
+#why_choose_area{
+  padding: 120px 0;
+  background-color: var(--whychoose-bg);
+}
+
+.why_choose_title{
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: bold;
+  
+}
+
+.why_choose_grid{
+  margin-top: 40px;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,225px);
+gap: 30px;
+}
+
+
+#A{
+  grid-column: 1/2;
+  grid-row: 1/3;
+justify-content: center;
+  
+}
+
+#A img{
+  width: 50px;
+  height:50px;
+}
+
+#B{
+  grid-column: 2/4;
+  grid-row: 1/1;
+}
+
+#C{
+   grid-column: 2/4;
+ 
+}
+
+#D{
+  grid-column: 1/3;
+}
+
+
+.choose_item{
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px;
+  
+}
+
+
+
+.choose_item h6{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+
+
+
 
 
 /* responsive area */
@@ -393,6 +461,50 @@ max-width: 250px;
 }
 
 
+/* why choose area */
+
+#why_choose_area{
+  padding: 60px 0;
+}
+
+.why_choose_title{
+  font-size: 3rem;
+
+}
+
+
+.why_choose_grid{
+grid-template-columns: 1fr;
+grid-template-rows: 300px;
+gap: 30px;
+}
+
+
+#A{
+  grid-column: 1/1;
+  grid-row: 1/1;
+
+  
+}
+
+
+
+#B{
+  grid-column: 1/1;
+  grid-row: 2/3;
+}
+
+#C{
+   grid-column: 1/1;
+ 
+}
+
+#D{
+  grid-column: 1/1;
+}
+
+
+
 }
 
 
@@ -443,11 +555,6 @@ max-width: 250px;
     display: inline-block;
    }
 
- 
- 
-
-
-
 
    /* about podcast area */
 
@@ -480,6 +587,50 @@ max-width: 250px;
     top: 1px;
   right: 12px;
    }
+
+
+
+   /*  why choose area*/
+
+#why_choose_area{
+  padding: 90px 0;
+}
+
+.why_choose_title{
+  font-size: 4rem;
+
+}
+
+
+.why_choose_grid{
+grid-template-columns: 1fr;
+grid-template-rows: 350px;
+gap: 30px;
+}
+
+
+#A{
+  grid-column: 1/1;
+  grid-row: 1/1;
+
+  
+}
+
+
+
+#B{
+  grid-column: 1/1;
+  grid-row: 2/3;
+}
+
+#C{
+   grid-column: 1/1;
+ 
+}
+
+#D{
+  grid-column: 1/1;
+}
 
 
 
