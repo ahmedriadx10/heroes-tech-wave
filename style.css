@@ -63,7 +63,7 @@ font-weight: 600;
 }
 
 .btn:hover{
-transform: translateY(-1px);
+/* transform: translateY(-1px); */
 box-shadow: 0 0 12px rgba(251, 9, 180, 1);
 }
 
@@ -614,7 +614,7 @@ font-weight: 800;
 
 /* responsive area */
 
-@media screen and (max-width:576px){
+@media screen and (max-width:575.98px){
 
   .container{
   width: 96%;
@@ -852,7 +852,7 @@ font-size: 4rem;
 
 /* responsive up to 576px device */
 
-@media screen and (min-width:576px) and (max-width:992px){
+@media screen and (min-width:576px) and (max-width:991.98px){
 .container{
   width: 95%;
 }
@@ -1058,7 +1058,7 @@ font-size: 5rem;
 
 /* responsive up to 992px device */
 
-@media screen and (min-width:992px) and (max-width:1200px){
+@media screen and (min-width:992px) and (max-width:1220px){
   
 
 .container{
