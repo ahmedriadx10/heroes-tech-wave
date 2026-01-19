@@ -427,6 +427,56 @@ border-radius: 20px 20px 0 0;
 
 
 
+/* host area design */
+
+#meet_the_host{
+  padding-bottom: 120px;
+}
+
+.host_area_title{
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: bold;
+}
+.host_area_main{
+  margin-top: 40px;
+  gap: 24px;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* .host_area_main>img{
+  border: 1px solid red;
+  border-radius: 50%;
+
+} */
+
+.host_info h6{
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.host_info p{
+  margin: 16px 0;
+}
+.host_icons_area{
+gap: 8px;
+}
+
+.host_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(83, 60, 114);
+}
+
+
 
 /* responsive area */
 
@@ -588,6 +638,46 @@ gap: 30px;
   font-size: 2rem;
 }
 
+
+/* host area  */
+
+#meet_the_host{
+  padding-bottom: 50px;
+}
+
+.host_area_title{
+  text-align: center;
+  font-size: 3.2rem;
+}
+.host_area_main{
+  margin-top:24px;
+  padding: 24px;
+text-align: center;
+  flex-direction: column;
+
+}
+
+.host_info h6{
+  font-size: 2.4rem;
+}
+
+
+.host_icons_area{
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -741,6 +831,34 @@ gap: 30px;
 
 .episode_info h6{
   font-size: 2.2rem;
+}
+
+
+/* host area */
+
+#meet_the_host{
+  padding-bottom: 70px;
+}
+
+.host_area_title{
+ 
+  font-size: 3.7rem;
+}
+.host_area_main{
+
+  padding: 40px;
+ flex-direction: column;
+ text-align: center;
+}
+
+.host_icons_area{
+  justify-content: center;
+}
+
+
+
+.host_info h6{
+  font-size: 3rem;
 }
 
 
