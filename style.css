@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 p{
- color: #ddd;
+ color:rgb(169, 158, 184);
  line-height: 24px;
 }
 
@@ -182,7 +182,7 @@ justify-content: center;
 .tooltip_area{
   position: absolute;
   top: 15px;
-  right: 21px;
+  right: 22px;
   background-color:rgba(0, 255, 136, 1) ;
   border-radius: 36px;
   font-size: 1.6rem;
@@ -192,7 +192,7 @@ justify-content: center;
   animation: popup 10s linear infinite;
 }
 
-@keyframes popup{
+/* @keyframes popup{
  0%{
     background-color: rgba(0, 255, 136, 1);
       box-shadow: 0 0 15px rgba(0, 255, 136, 1);
@@ -213,7 +213,11 @@ justify-content: center;
   background-color: rgba(145, 0, 248, 1);
   box-shadow: 0 0 15px rgba(145, 0, 248, 1);
 }
+100%{
+     background-color: rgba(0, 255, 136, 1);
+      box-shadow: 0 0 15px rgba(0, 255, 136, 1);
 }
+} */
 
 
 
@@ -478,6 +482,72 @@ gap: 8px;
 
 
 
+
+/* footer area design */
+
+footer{
+  padding: 100px 0;
+background-image: url(./assets/footer-bg.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size:cover;
+}
+
+
+.footer_main_container{
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+
+  color: #ddd;
+}
+
+
+.footer_main_container h6{
+
+font-size: 60px;
+font-weight: 800;
+}
+
+.footer_gradient_txt{
+
+  background: var(--brand-gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+.footer_icons_area{
+  /* grid-template-columns: repeat(4,1fr); */
+  margin: 32px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer_icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive area */
 
 @media screen and (max-width:576px){
@@ -642,7 +712,7 @@ gap: 30px;
 /* host area  */
 
 #meet_the_host{
-  padding-bottom: 50px;
+padding: 0 10px 50px;
 }
 
 .host_area_title{
@@ -657,6 +727,12 @@ text-align: center;
 
 }
 
+
+.host_area_main>img{
+  width: 150px;
+  height: 150px;
+}
+
 .host_info h6{
   font-size: 2.4rem;
 }
@@ -665,6 +741,30 @@ text-align: center;
 .host_icons_area{
   justify-content: center;
 }
+
+
+
+
+/* footer area */
+
+footer{
+  padding: 40px 0;
+  background-size: 100% 100%;
+}
+
+.footer_main_container h6{
+
+font-size: 4rem;
+}
+.footer_icons_area{
+
+  width: 70%;
+  margin: 20px auto;
+  row-gap: 16px;
+}
+
+
+
 
 
 
@@ -837,7 +937,7 @@ gap: 30px;
 /* host area */
 
 #meet_the_host{
-  padding-bottom: 70px;
+  padding: 0 10px 70px;
 }
 
 .host_area_title{
@@ -860,6 +960,27 @@ gap: 30px;
 .host_info h6{
   font-size: 3rem;
 }
+
+
+/* footer area */
+
+footer{
+  padding: 80px 0;
+  background-size: 100% 100%;
+}
+
+.footer_main_container h6{
+
+font-size: 5rem;
+}
+.footer_icons_area{
+
+  width: 75%;
+  margin: 25px auto;
+  row-gap: 16px;
+}
+
+
 
 
 }
